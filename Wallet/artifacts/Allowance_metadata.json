@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -34,44 +39,6 @@
 					}
 				],
 				"name": "AllowanceChhange",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "MoneyReceived",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_beneficiary",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "MoneySent",
 				"type": "event"
 			},
 			{
@@ -158,13 +125,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "receiveMoney",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "renounceOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -179,24 +139,6 @@
 					}
 				],
 				"name": "transferOwnership",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "withdrawMoney",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -225,7 +167,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Wallet/NewWallet.sol": "Wallet"
+			"Wallet/Allowance.sol": "Allowance"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -245,14 +187,6 @@
 			"urls": [
 				"bzz-raw://f25276d55e7dd1571c22830d655ddda3fe143215f1418ddbc379a0129eb60b62",
 				"dweb:/ipfs/QmVKfDXCHWrKYQYFzbjYaCmfa9LyQhYgVhZZTuxLm6TRyv"
-			]
-		},
-		"Wallet/NewWallet.sol": {
-			"keccak256": "0x5e6485f63933510d74da4fb06a7e4934b306fe66485cb2e0ef347475c5236b26",
-			"license": "UNLICENSED",
-			"urls": [
-				"bzz-raw://1ea20415632314bb36e847153afaa0bb64c0d1a0bff55cb499ac9b6780819497",
-				"dweb:/ipfs/QmcbvaVwE9d2oU41D8m8q3YtJeXkzScHLxYNjCtAS5Sgoc"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol": {
